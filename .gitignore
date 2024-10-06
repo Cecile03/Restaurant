@@ -1,0 +1,9 @@
+# .env
+node_modules/
+package-lock.json
+README.md
+
+# client/html/*.html
+# client/css/*.css
+# client/js/*.js
+# assets/images/*.png

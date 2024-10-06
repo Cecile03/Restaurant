@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+}
+
+h1,
+p {
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 0 5px 0;
+}
+
+p {
+  font-weight: normal;
+  font-family: math;
+  margin: 0;
+}
+
+.logo,
+.adresse,
+.contact,
+.horaire,
+.reseau {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adresse,
+.contact,
+.horaire {
+  display: flex;
+  flex-direction: column;
+}
+
+.reseau {
+  display: flex;
+  align-items: flex-end;
+  margin: 10px 0;
+}
+
+.footer {
+  background-color: #be6a42;
+  display: flex;
+  text-align: center;
+}
+
+/* phone */
+h1 {
+  font-size: 10px;
+}
+
+p {
+  font-size: 10px;
+}
+
+.footer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo,
+.reseau {
+  width: 100%;
+}
+
+.adresse,
+.contact,
+.horaire {
+  width: 100%;
+}
+
+.separateur {
+  margin: 10px 10px; /* ajoutez un peu d'espace autour du séparateur */
+}
+
+.logo_restaurant {
+  width: 100px;
+  height: 100px;
+}
+
+.logo_reseau {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+}
+
+/* landscape phone */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 11px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  .footer {
+    flex-direction: row;
+    align-items: normal;
+  }
+
+  .logo,
+  .reseau {
+    width: 11%;
+  }
+
+  .adresse,
+  .contact,
+  .horaire {
+    width: 26%;
+  }
+
+  .separateur {
+    border-left: 2px solid white; /* ajustez la couleur et l'épaisseur du trait selon vos préférences */
+    margin: 20px 20px; /* ajoutez un peu d'espace autour du séparateur */
+  }
+
+  .logo_restaurant {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo_reseau {
+    width: 12px;
+    height: 12px;
+    margin: 0 2px;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .footer {
+    flex-direction: row;
+    align-items: normal;
+  }
+
+  .logo,
+  .reseau {
+    width: 11%;
+  }
+
+  .adresse,
+  .contact,
+  .horaire {
+    width: 26%;
+  }
+
+  .separateur {
+    border-left: 2px solid white; /* ajustez la couleur et l'épaisseur du trait selon vos préférences */
+    margin: 20px 20px; /* ajoutez un peu d'espace autour du séparateur */
+  }
+
+  .logo_restaurant {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo_reseau {
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+  }
+}
+
+/* desktops */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .footer {
+    flex-direction: row;
+    align-items: normal;
+  }
+
+  .logo,
+  .reseau {
+    width: 11%;
+  }
+
+  .adresse,
+  .contact,
+  .horaire {
+    width: 26%;
+  }
+
+  .separateur {
+    border-left: 2px solid white; /* ajustez la couleur et l'épaisseur du trait selon vos préférences */
+    margin: 20px 20px; /* ajoutez un peu d'espace autour du séparateur */
+  }
+
+  .logo_restaurant {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo_reseau {
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+  }
+}

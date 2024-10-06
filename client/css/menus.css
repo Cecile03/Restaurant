@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fdfdf6;
+  width: 100%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #997c68;
+}
+
+p {
+  font-family: math;
+  color: #997c68;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_container {
+  width: 100%;
+  position: relative;
+  top: 50px; /* décale le footer de 50px vers le bas */
+  display: flex;
+  flex-direction: column;
+}
+
+.listItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.available {
+  position: absolute;
+  background-color: #ab2503;
+  padding: 5px 10px;
+  color: #fdfdf6;
+  font-size: 30px;
+  align-items: end;
+}
+
+.list_menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionHover {
+  position: absolute;
+  display: none;
+  text-align: center;
+}
+
+.type_menu {
+  display: grid;
+  grid-template-rows: auto;
+  column-gap: 50px;
+  row-gap: 30px;
+  padding: 50px 100px;
+}
+
+.listItems:hover .descriptionHover {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+}
+
+.listItems:hover .price {
+  background: #fdfdf6d5;
+  font-size: 50px;
+  align-items: center;
+}
+
+/* phone */
+object {
+  height: 46vh;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+}
+
+.type_menu {
+  grid-template-columns: 100%;
+}
+
+.available {
+  top: 300px;
+}
+
+.listItems:hover .descriptionHover {
+  width: 350px;
+}
+
+/* landscape phone */
+@media (min-width: 576px) {
+  object {
+    height: 12vh;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .type_menu {
+    grid-template-columns: 49% 49%;
+  }
+
+  .available {
+    top: 250px;
+  }
+
+  .listItems:hover .descriptionHover {
+    width: 300px;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  object {
+    height: 17vh;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .type_menu {
+    grid-template-columns: 49% 49%;
+  }
+
+  .available {
+    top: 250px;
+  }
+
+  .listItems:hover .descriptionHover {
+    width: 300px;
+  }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+  object {
+    height: 15vh;
+  }
+
+  img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .type_menu {
+    grid-template-columns: 31% 31% 31%;
+  }
+
+  .available {
+    top: 300px;
+  }
+
+  .listItems:hover .descriptionHover {
+    width: 350px;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/accueil.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Accueil</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <object data="../template/menu.html" type="text/html"></object>
+    </div>
+    <div
+      class="restau_dehors"
+      data-aos="fade-in"
+      data-aos-easing="ease-in-out-sine"
+      data-aos-duration="10000"
+      data-aos-once="true"
+      data-aos-delay="0"
+    >
+      <h1>Gastronomique Delice</h1>
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+      </style>
+    </div>
+    <div class="interieur">
+      <div class="inter_hall" data-aos="fade-right" data-aos-delay="300">
+        <img
+          src="../../assets/images/restau_int_hall.jpg"
+          alt="image de l'intérieur du restaurant : le hall"
+          class="img_int"
+        />
+        <p>
+          Un hall élégant et chaleureux, avec vue sur la ville. <br />
+          Venez déguster une cuisine variée et savoureuse dans ce cadre
+          convivial ! 😊
+        </p>
+      </div>
+      <div class="inter_bar" data-aos="fade-up" data-aos-delay="300">
+        <img
+          src="../../assets/images/restau_int_bar.jpg"
+          alt="image de l'intéreur du restaurant : le bar"
+          class="img_int"
+        />
+        <p>
+          Un bar spacieux et lumineux, avec un comptoir élégant. <br />
+          Venez découvrir la variété de boissons que nous vous proposons ! 🍾
+        </p>
+      </div>
+      <div class="inter_table" data-aos="fade-left" data-aos-delay="300">
+        <img
+          src="../../assets/images/restau_int_table.jpg"
+          alt="image de l'intérieur du restaurant : les tables à manger"
+          class="img_int"
+        />
+        <p>
+          Une salle lumineuse et spacieuse. <br />
+          Venez vous installer aux tables à manger de Gastronomique Délice et
+          appréciez le service et la cuisine de qualité ! 😊
+        </p>
+      </div>
+    </div>
+    <div class="description" data-aos="fade-up">
+      <p>
+        Vous serez également séduit par le décor moderne et raffiné de notre
+        restaurant, qui allie le bois, le verre et le métal. Notre restaurant
+        est l’endroit idéal pour passer un moment agréable en toute occasion. 🍽️
+      </p>
+    </div>
+    <div class="footer_container">
+      <object
+        data="../template/footer.html"
+        type="text/html"
+        class="footer"
+      ></object>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

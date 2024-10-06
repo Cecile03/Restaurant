@@ -1,0 +1,150 @@
+.calendar {
+  width: max-content;
+  height: 450px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  background: var(--color);
+  font-weight: 700;
+  color: var(--white);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.calendar-body {
+  pad: 30px;
+}
+
+.calendar-week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+  cursor: pointer;
+  color:rgb(104, 104, 104);
+}
+
+.calendar-week-days div:hover {
+  color:black;
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+}
+
+.calendar-week-days div {
+  display: grid;
+  place-items: center;
+  color: var(--bg-second);
+  height: 50px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  color: var(--color-txt);
+}
+
+.calendar-days div {
+  width: 57px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  animation: to-top 1s forwards;
+}
+
+.month-picker {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+}
+
+.month-picker {
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+
+.month-picker {
+  display: flex;
+  align-items: center;
+}
+
+.month-change {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.month-change:hover {
+  transition:all .2s ease-in-out ;
+  transform: scale(1.25);
+}
+
+.month-change:hover pre {
+  color: var(--bg-body);
+}
+
+.calendar-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#year:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.2 ease-in-out;
+}
+
+.calendar-days div span {
+  position: absolute;
+}
+
+.calendar-days div:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #ffa06175;
+  border-radius: 20%;
+  color: var(--dark-text);
+}
+
+.calendar-days div.current-date {
+  color: var(--dark-text);
+  background: var(--color);
+  border-radius: 20%;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.calendar-days div.past-date {
+  color: var(--light-second);
+  background-color: var(--light-body);
+  border-radius: 20%;
+}
+
+.month-picker #month {
+  width: 175px;
+  text-align: center;
+}
+
+.month-change i {
+  font-size: 2rem;
+  font-weight: bold;
+}
